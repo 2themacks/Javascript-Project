@@ -1,0 +1,19 @@
+.question-box {
+  height: 300px;
+  width: 500px;
+  border: solid 1px black;
+}
+
+.answer-box {
+  height: 150px;
+  width: 250px;
+  border: solid 1px black;
+}
+
+.answerText {
+  background-color: green;
+}
+
+.hide {
+  display: none;
+}
