@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+    <title>Jeopardy App</title>
   </head>
   <body>
-    <h1>jeoPARTY!</h1>
-    <button class="jepButton" id="clickMe">Here comes the Jeopardy!</button>
+    <h1>jeoPARTY time</h1>
+    <p>Click on the button below to get a new question populated. Then, type your answer in the text field and press the "get answer" button to see if you are right.</p>
+    <div id="answerMessage"></div>
+    <button class="jepButton" id="clickMe">QUESTION</button>
     <div id="gameBox" class="gameBox">
     <div class="question-box" id="questionBox">
       <div id="category"></div>
@@ -24,10 +26,9 @@
       <div id="typedAnswer"></div>
       <h3>actual answer</h3>
       <div id="answer" class="hide"></div>
-      <div id="itsRightBtnDiv"></div>
-    </div>
-    <div id="resetGameDiv">
-      <button type="reset" value="Reset" class="reset" id="resetBtn">Reset</button>
+      <div id="itsRightBtnDiv">
+        <button type="button" id="itsRightBtn" class="hide">I got it right</button>
+      </div>
     </div>
   </div>
   <div class="scoreboard">
