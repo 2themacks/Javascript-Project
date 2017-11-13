@@ -6,18 +6,33 @@
     <title></title>
   </head>
   <body>
-    <h1>Jeoparty</h1>
-    <button id="clickMe">Here comes the Jeopardy!</button>
-    <div class="question-box">
+    <h1>jeoPARTY!</h1>
+    <button class="jepButton" id="clickMe">Here comes the Jeopardy!</button>
+    <div id="gameBox" class="gameBox">
+    <div class="question-box" id="questionBox">
       <div id="category"></div>
       <div id="question"></div>
       <div id="value"></div>
       <div id="theanswer"></div>
+      <form id="answerForm">
+        type answer here: <input id="userAnswer">
+      </form>
+      <button class="hide" id="answerButton">get answer</button>
     </div>
-    <button class="hide" id="answerButton">get answer</button>
-    <div class="answer-box">
+    <div class="answer-box" id="answerBox">
+      <h3>your answer</h3>
+      <div id="typedAnswer"></div>
+      <h3>actual answer</h3>
       <div id="answer" class="hide"></div>
+      <div id="itsRightBtnDiv"></div>
     </div>
+    <div id="resetGameDiv">
+      <button type="reset" value="Reset" class="reset" id="resetBtn">Reset</button>
+    </div>
+  </div>
+  <div class="scoreboard">
+    <p>Score: <span id="score"></span> </p>
+  </div>
   </body>
   <script type="text/javascript" src="script.js"></script>
 </html>

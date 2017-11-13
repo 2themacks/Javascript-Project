@@ -1,19 +1,47 @@
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  color: lightBlue;
+  font-family: sans-serif;
+}
+
+.jepButton {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 20%;
+}
+
 .question-box {
-  height: 300px;
-  width: 500px;
+  height: 250px;
+  width: 300px;
   border: solid 1px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.reset {
+  display: none;
 }
 
 .answer-box {
-  height: 150px;
+  height: 250px;
   width: 250px;
   border: solid 1px black;
-}
-
-.answerText {
-  background-color: green;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
 }
 
 .hide {
   display: none;
+}
+.gameBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.scorebox {
 }
